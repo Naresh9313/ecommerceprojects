@@ -1,0 +1,103 @@
+/* ===================================
+========= Register Page  */
+.form-container {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex-direction: column;
+  background-color: #ea0d57;
+  background-image: linear-gradient(0deg, #ea0d57 0%, #380ec2 100%);
+  padding: 20px;
+  border-radius: 15px; /* Adding rounded corners for a softer look */
+}
+
+.form-container form {
+  box-shadow: rgba(6, 45, 241, 0.3) 0px 5px 20px;
+  padding: 25px;
+  background-color: #3f13db;
+  border-radius: 15px; /* Rounded corners for form */
+  width: 100%;
+  max-width: 450px; /* Limit form width for better alignment */
+}
+
+.form-container form .title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #fff;
+}
+
+.form-container form input {
+  border: none;
+  border-bottom: 2px solid #1fd373;
+  border-radius: 5px; /* Rounded borders */
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #f4f4f4; /* Light background for inputs */
+  font-size: 16px;
+}
+
+.form-container form input:focus {
+  outline: none;
+  border-bottom: 2px solid #28a745; /* Focus effect with green */
+  background-color: #fff;
+}
+
+.form-container form button {
+  border: none;
+  border-radius: 25px;
+  background-color: #df5404;
+  color: #fff;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 5px; /* Rounded button */
+}
+
+.form-container form button:hover {
+  background-color: #d9534f;
+  transform: translateY(-2px); /* Slight hover lift effect */
+}
+
+.form-container form button:active {
+  transform: translateY(1px); /* Active state for button */
+}
+
+.forgot-btn {
+  background-color: #434343a4 !important;
+  border: 0 !important;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.forgot-btn:hover {
+  color: #28a745 !important;
+  text-decoration: underline; /* Hover effect to indicate interactivity */
+}
+
+/* Additional Styling for Responsive Design */
+@media (max-width: 768px) {
+  .form-container form {
+      padding: 15px;
+      max-width: 90%;
+  }
+
+  .form-container form .title {
+      font-size: 20px;
+  }
+
+  .form-container form button {
+      font-size: 14px;
+      padding: 10px;
+  }
+}

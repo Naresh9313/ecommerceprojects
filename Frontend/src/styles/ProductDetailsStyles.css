@@ -1,0 +1,112 @@
+/* ============================
+========= Product Details ==========
+============================ */
+
+.product-details {
+  margin-top: 100px !important;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background for the page */
+}
+
+.product-details-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px; /* Subtle shadow to make it pop */
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.product-details-info h6 {
+  margin-bottom: 20px !important;
+  color: #333; /* Dark text for readability */
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.product-details-info p {
+  font-size: 16px;
+  color: #555; /* Slightly muted text color for paragraph */
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ============================
+========= Similar Products ==========
+============================ */
+
+.similar-products {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.similar-products .card {
+  background-color: rgba(62, 13, 211, 0.097);
+  width: 18rem;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden; /* Prevents content from overflowing rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.similar-products .card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px; /* Enhanced shadow */
+}
+
+.similar-products .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.similar-products .card-price {
+  color: rgb(111, 19, 209);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.similar-products button {
+  border-radius: 5px;
+  width: 100%;
+  background-color: #17a2b8; /* Blue background for buttons */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.similar-products button:hover {
+  background-color: #138496; /* Darker blue on hover */
+}
+
+.similar-products .card-text {
+  color: rgb(24, 215, 24);
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.similar-products .card img {
+  max-height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-bottom: 1px solid #ddd; /* Divider between image and other content */
+}
+
+.similar-products .card img:hover {
+  transform: scale(0.9); /* Slight zoom effect */
+}
