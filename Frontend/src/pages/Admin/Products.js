@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AdminMenu from "../../components/Layout/AdminMenu";
-import axios from "axios";
+import axios from "../../utils/axiosInstance";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
