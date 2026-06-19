@@ -6,7 +6,6 @@ import { useCart } from "../context/cart";
 import axios from "../utils/axiosInstance";
 import toast from "react-hot-toast";
 import Layout from "./../components/Layout/Layout";
-import { AiOutlineReload } from "react-icons/ai";
 import "../styles/Homepage.css";
 
 const HomePage = () => {
@@ -34,7 +33,7 @@ const HomePage = () => {
     }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  },);
 
   //get all cat
   const getAllCategory = async () => {

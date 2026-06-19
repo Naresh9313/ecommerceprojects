@@ -6,7 +6,6 @@ import SearchInput from '../Form/SearchInput';
 import useCategory from '../../hooks/useCategory';
 import { useCart } from "../../context/cart";
 import { Badge } from "antd";
-import {FaShoppingCart} from 'react-icons/fa';
 // import {GiShoppingBag} from 'react-icons/gi';
 
 const Header = () => {

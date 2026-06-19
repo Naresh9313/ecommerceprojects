@@ -11,7 +11,7 @@ import axios from "../utils/axiosInstance";
 
 
 const CartPage = () => {
-  const [auth, setAuth] = useAuth();
+  const [auth] = useAuth();
   const [cart, setCart] = useCart();
   const navigate = useNavigate();
   const [clientToken, setClientToken] = useState("");
@@ -26,7 +26,7 @@ const CartPage = () => {
   try {
     let total = 0;
     cart?.map((item) => {
-      total = total + item.price;
+      return total = total + item.price;
     });
     return total.toLocaleString("en-US", {
       style: "currency",
@@ -68,7 +68,7 @@ const CartPage = () => {
     try {
       setLoading(true);
       const { nonce } = await instance.requestPaymentMethod();
-      const { data } = await axios.post("/api/v1/product/braintree/payment", {
+      const {  } = await axios.post("/api/v1/product/braintree/payment", {
         nonce,
         cart,
       });

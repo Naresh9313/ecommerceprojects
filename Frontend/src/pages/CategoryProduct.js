@@ -14,10 +14,9 @@ const CategoryProduct = () => {
   const [category, setCategory] = useState([]);
   const [cart, setCart] = useCart();
 
-
-  useEffect(() => {
-    if (params?.slug) getPrductsByCat();
-  }, [params?.slug]);
+useEffect(() => {
+  getPrductsByCat();
+}, [params?.slug]);
 
   const getPrductsByCat = async () => {
     try {

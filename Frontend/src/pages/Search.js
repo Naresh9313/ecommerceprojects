@@ -6,7 +6,7 @@ import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
-  const [values, setValues] = useSearch();
+  const [values] = useSearch();
   const [cart, setCart] = useCart();
   const navigate = useNavigate();
 
