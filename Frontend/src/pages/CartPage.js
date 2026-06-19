@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import DropIn from "braintree-web-drop-in-react";
 import toast from "react-hot-toast";
 import "../styles/CartStyles.css";
-import axios from "../../utils/axiosInstance";
+import axios from "../utils/axiosInstance";
 
 
 

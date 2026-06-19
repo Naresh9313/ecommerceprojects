@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from '../components/Layout/Layout'
 import { useParams,useNavigate} from "react-router-dom";
-import axios from "../../utils/axiosInstance";
+import axios from "../utils/axiosInstance";
 import { useCart } from "../context/cart";
 import { toast } from 'react-hot-toast';
 import "../styles/CategoryProductStyles.css";
