@@ -19,7 +19,10 @@ connectDB();
 const app = express();
 
 //Middlewares
-app.use(cors());
+app.use(cors({
+  origin: "https://ecommerceprojects-37ci.vercel.app",
+  credentials: true
+}));
 app.use(express.json());
 app.use(morgan("dev"));
 
